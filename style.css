@@ -92,7 +92,7 @@ main {
   z-index: -1;
   height: 100vh;
 }
-.inicio h2 {
+.inicio h1 {
   font-size: 90px;
   color: white;
   font-family: "TheSeasons";
@@ -133,20 +133,23 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  /* margin-left: 100px; */
   margin-top: 5vh;
 }
 .productosSection h2 {
+  display: flex;
   text-align: center;
   font-weight: 100;
   font-size: 40px;
+  margin-left: 100px;
 }
 
 .productosSection .titleBar{
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content:center;
     justify-self: center;
-    gap: 15vw;
+    gap: 20vw;
     width: 100%;
 }
 .titleClock{
@@ -249,10 +252,27 @@ main {
 
 }
 
+.nosotro {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #1b1b1bb6;
+  font-family: 'TheSeasons';
+}
+
+.nosotro h2{
+  font-size: 300%;
+  font-family: 'TheSeasons';
+}
+
 /* *footer*/
-footer{
+
+.contact {
   display: flex;
   align-items: center;
+  align-content: center;
   justify-content: space-around;
   font-family: 'TheSeasons';
   color: white;
@@ -264,9 +284,35 @@ footer{
   margin-top: 2vh;
 }
 footer h2{
-  font-size: 2.5rem;
+  font-size: 300%;
   font-weight: 100;
 }
 footer h3{
   font-weight: 100;
+}
+
+.scrollTop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #00000042;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.scrollTop::before {
+  content: "\2191";
+}
+
+.scrollTop:hover {
+  background-color: #000000;
 }
