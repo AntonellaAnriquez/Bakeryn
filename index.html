@@ -1,43 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trabajo integrador</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>        
-        <img class="Logo" src="./img/Logo.png" alt="Logo">
-        <nav>
-            <a href="Nosotros">NOSOTROS</a>
-            <a href="Delivery">DELIVERY</a>
-            <a href="Productos">PRODUCTOS</a>
-            <a href="Compra"><i class="bi bi-bag-fill"></i></a>
-        </nav>            
-        
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img class="Logo" src="./img/Logo.png" alt="Logo" />
+      <nav>
+        <a href="Nosotros">NOSOTROS</a>
+        <a href="Delivery">DELIVERY</a>
+        <a href="#productosSection">PRODUCTOS</a>
+        <a href="Compra"><i class="bi bi-bag-fill"></i></a>
+      </nav>
     </header>
 
-    <main>  
-        <section class="inicio">
-            <img src="./img/inicio.jpg" alt="Fondo Facturas">
-            <div class="inicioTexto">
-                <h2>Hecho a mano</h2>
-                <h2 class="inicioAbajo">con amor</h2>
-                <div class="texto">
-                    <p>Estamos con vos para darte energía en tus mañanas y <br>
-                        acompañar tus tardes. Vení a disfrutar y a comer algo <br>
-                        rico, y si no podés no te preocupes, nosotros te lo <br>
-                        llevamos.</p>
-                <div class="Comprar"><p>COMPRAR AHORA</p></div>
-                </div>
-            </div>
-        </section>
-        <section class="products">
-            <h2>Lo más <br>
-            destacado</h2>
-        </section>
+    <main>
+      <section class="inicio">
+        <img src="./img/inicio.jpg" alt="Fondo Facturas" />
+        <div class="inicioTexto">
+          <h2>Hecho a mano</h2>
+          <h2 class="inicioAbajo">con amor</h2>
+          <div class="texto">
+            <p>
+              Estamos con vos para darte energía en tus mañanas y <br />
+              acompañar tus tardes. Vení a disfrutar y a comer algo <br />
+              rico, y si no podés no te preocupes, nosotros te lo <br />
+              llevamos.
+            </p>
+            <div class="Comprar"><p>COMPRAR AHORA</p></div>
+          </div>
+        </div>
+      </section>
+      <section class="productosSection" id="productosSection">
+        <div class="titleBar">
+          <h2>
+            Lo más <br />
+            destacado
+          </h2>
+          <div class="titleClock">
+            <i class="bi bi-clock"></i>
+            <p>
+              De lunes a domingos <br />
+              acompañalo con <br />
+              nuestro más rico café.
+            </p>
+          </div>
+        </div>
+
+        <div class="contenedorProducto" id="contenedorProducto"></div>
+        
+      </section>
     </main>
-</body>
+    <footer>
+        <h2>Contacto</h2>
+        <div>
+            <h3>Dirección</h3>
+            <p>123 Anywhere St., Any City, State, Country</p>
+        </div>
+        <div>
+            <h3>Teléfono</h3>
+            <p>(123) 456-789</p>
+        </div>
+        <div>
+            <h3>Seguinos</h3>
+            <i class="bi bi-instagram"></i>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
 </html>

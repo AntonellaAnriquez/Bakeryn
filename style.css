@@ -57,11 +57,12 @@ header .Logo {
 /* *main */
 
 main {
-    font-size: 20px;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    font-family: "TheSeasons";
+  font-size: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-family: "TheSeasons";
+  
 }
 .Comprar {
   width: 150px;
@@ -78,18 +79,18 @@ main {
   justify-content: center;
 }
 /* *Inicio */
-.inicio{
-    display: flex;
-    flex-direction: column;
+.inicio {
+  display: flex;
+  flex-direction: column;
+
 }
-.inicio .inicioTexto{
-    width: 100%;
-    position: absolute;
+.inicio .inicioTexto {
+  width: 100%;
+  position: absolute;
 }
 .inicio img {
   z-index: -1;
-  height: 120vh;
-  transform: translateY(-15vh);
+  height: 100vh;
 }
 .inicio h2 {
   font-size: 90px;
@@ -97,6 +98,7 @@ main {
   font-family: "TheSeasons";
   font-weight: lighter;
   display: flex;
+  text-shadow: 3px 3px 8px black;
   position: absolute;
   margin-top: 90px;
   margin-left: 80px;
@@ -107,6 +109,7 @@ main {
   color: white;
   font-family: "TheSeasons";
   font-weight: lighter;
+  text-shadow: 3px 3px 8px black;
   display: flex;
   position: absolute;
   margin-top: 170px;
@@ -125,14 +128,145 @@ main {
   margin-left: 80px;
 }
 
-.products{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.productosSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5vh;
 }
-.products h2{
-    text-align: center;
-    font-weight: 100;
-    font-size: 40px;
+.productosSection h2 {
+  text-align: center;
+  font-weight: 100;
+  font-size: 40px;
+}
+
+.productosSection .titleBar{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    justify-self: center;
+    gap: 15vw;
+    width: 100%;
+}
+.titleClock{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8vw;
+}
+.titleClock p{
+  color: rgb(255, 196, 108);
+}
+.titleClock i{
+  color: rgb(255, 196, 108);
+  font-size: 2rem;
+  margin-right: 1vw;
+}
+
+/** tarjetas  */
+.productos{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+.contenedorProducto{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.tarjeta{
+  background-color: rgb(53, 53, 53);
+  color: #ffff;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-evenly;
+  align-items: center;
+  margin: .5rem;
+  height: 55vh;
+  width: 20vw;
+  padding-bottom: 2rem;
+  border-radius: 10px;
+  flex-basis: 15%;
+
+}
+.tarjeta img{
+  height: 40vh;
+  -webkit-filter: drop-shadow(0 0 10px #000000);
+  filter: drop-shadow(0 0 10px #000000);
+  opacity: .7;
+  transition: 0.2s;
+}
+.tarjeta h3{
+  font-size: 1.3rem;
+  font-family: 'TheSeasons';
+  text-align: center;
+  font-weight: 100;
+}
+.tarjeta p{
+  font-size: 1.5rem;
+  font-family: 'TheSeasons';
+  font-weight: 100;
+  margin-top: .5rem;
+}
+.tarjeta button{
+  background-color: #ff565600;
+  color: white;
+  font-size: 1rem;
+  font-family: 'TheSeasons';
+  margin-top: .5rem;
+  padding: 0.5rem;
+  border: 3px solid white;
+}
+.tarjeta:hover img{
+  transition: 1s;
+  -webkit-filter: drop-shadow(0 0 10px #ffffff);
+  filter: drop-shadow(0 0 10px #ffffff);
+  opacity: 1;
+
+}
+.tarjeta:hover{
+  background-color: #D89961;
+  transition: 0.5s;
+}
+.tarjeta .descripcion{
+  color: #000000;
+  background-color: rgba(255, 255, 255, 0.788);
+  border-radius: 5px;
+  width: 15vw;
+  text-align: center;
+  position: absolute;
+  opacity: 0;
+}
+.tarjeta:hover .descripcion{
+  opacity: 1;
+  transition: 1s;
+
+}
+
+/* *footer*/
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: 'TheSeasons';
+  color: white;
+  background-color: #1b1b1bb6;
+  height: 15vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  margin-bottom: 3vh;
+  margin-top: 2vh;
+}
+footer h2{
+  font-size: 2.5rem;
+  font-weight: 100;
+}
+footer h3{
+  font-weight: 100;
 }

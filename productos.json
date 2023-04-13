@@ -1,0 +1,62 @@
+
+{
+    "productos":
+    [
+        {
+            "nombre": "Muffin de chocolate",
+            "descripcion": "Esponjoso muffin de chocolate hecho con materia prima de calidad.",
+            "precio": 200,
+            "img": "./img/muffins-chocolate-menta-mesa-madera-removebg-preview.png"
+        },
+        
+        {
+            "nombre": "Macarons",
+            "descripcion": "Crujientes tapas con harina de almendra y un delicioso relleno.",
+            "precio": 180,
+            "img": "./img/pila-macarons-coloridos-aislados-fondo-blanco-removebg-preview.png"
+        },
+        
+        {
+            "nombre": "Pan de campo",
+            "descripcion": "Crujiente por fuera y suave por dentro.",
+            "precio": 300,
+            "img": "./img/nutricion-agria-fondo-marron-cocinar-removebg-preview.png"
+        },
+        
+        {
+            "nombre": "Cookies con chips",
+            "descripcion": "Crujientes galletas con el más rico chocolate.",
+            "precio": 100,
+            "img": "./img/calorias-postre-chocolate-indulgencia-removebg-preview.png"
+        },
+        
+        {
+            "nombre": "Torta de chocolate",
+            "descripcion": "Torta húmeda cubierta de chocolate.",
+            "precio": 500,
+            "img": "./img/Captura_de_pantalla_20230412_185353-removebg-preview.png"
+        },
+        
+        {
+            "nombre": "Cinnamon roll",
+            "descripcion": "Pan de canela dulce con glaseado.",
+            "precio": 180,
+            "img": "./img/rollo-canela-removebg-preview.png"
+        },
+        
+        {
+            "nombre": "Croissant",
+            "descripcion": "Pan crujiente hecho con el mejor hojaldre.",
+            "precio": 250,
+            "img": "./img/croissant-mesa-removebg-preview.png"
+        },
+        
+        {
+            "nombre": "Pan con semillas",
+            "descripcion": "Suave pan con mix de semillas perfecto para tostar",
+            "precio": 200,
+            "img": "./img/pan-delicioso-removebg-preview.png"
+        }
+        
+    ]
+}
