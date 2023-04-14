@@ -66,7 +66,6 @@ main {
   display: flex;
   flex-direction: column;
   font-family: "TheSeasons";
-  
 }
 .Comprar {
   width: 150px;
@@ -88,7 +87,6 @@ main {
 .inicio {
   display: flex;
   flex-direction: column;
-
 }
 .inicio .inicioTexto {
   width: 100%;
@@ -202,7 +200,6 @@ main {
   padding-bottom: 2rem;
   border-radius: 10px;
   flex-basis: 20%;
-
 }
 .tarjeta img{
   height: 70%;
@@ -236,10 +233,9 @@ main {
   -webkit-filter: drop-shadow(0 0 10px #ffffff);
   filter: drop-shadow(0 0 10px #ffffff);
   opacity: 1;
-
 }
 .tarjeta:hover{
-  background-color: #D89961;
+  background-color: rgb(217, 153, 97);
   transition: 0.5s;
 }
 .tarjeta .descripcion{
@@ -254,7 +250,6 @@ main {
 .tarjeta:hover .descripcion{
   opacity: 1;
   transition: 1s;
-
 }
 
 .nosotros {
@@ -265,11 +260,54 @@ main {
   padding-bottom: 30px;
   background-color: #1b1b1bb6;
   font-family: 'TheSeasons';
+  
 }
 
 .nosotro h2{
   font-size: 300%;
   font-family: 'TheSeasons';
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
+  }
+.formulario .boxform {
+  background-color: rgb(53, 53, 53);
+  border: none;
+  border: radius 1px ;
+  opacity: 90%;
+  width: 20%;
+  text-align: center;
+  border-radius: 10px;
+  flex-basis: 20%;
+}
+
+.formulario .buttonform {
+  background-color: rgb(217, 153, 97);
+  border: none;
+  width: 10%;
+  text-align: center;
+  border-radius: 10px;
+  flex-basis: 20%;
+  margin-bottom: 30px;
+}
+
+.formulario h2 {
+  font-size: 230%;
+  margin-top: 30px;
+}
+
+.formulario h3 {
+  font-size: 90%;
+  margin-bottom: 20px;
+}
+
+.formulario p {
+  align-items: flex-end;
+  margin: 10px 0px 0px 0px;
 }
 
 /* *footer*/
@@ -375,20 +413,16 @@ footer p {
   .inicio h1,
   .inicio .inicioAbajo,
   .inicio .texto {
-    /* margin-left: 20px;
-    margin-right: 20px; */
     text-align: center;
     margin: 0px 0px 0px 0px;
     width: auto;
     height: auto;
-    
   }
   
   .inicio h1{
     font-size: 40px;
     margin-top: 0%;
     margin-left: 17%;
-  
   }
 
   .inicio .inicioAbajo {
@@ -399,7 +433,6 @@ footer p {
   
   .inicio .texto {
     font-size: 0px;
-
   }
   .inicio .img {
     max-width: 100%;
@@ -460,6 +493,18 @@ footer p {
 
   .carousel-inner{
     height: auto;
+  }
+
+  .formulario {
+    text-align: center;
+  }
+
+  .formulario .boxform {
+    width: 50%;
+  }
+
+  .formulario .buttonform {
+    width: 30%;
   }
 
   .contact {
