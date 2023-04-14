@@ -6,9 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trabajo integrador</title>
     <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-
     <header>
       <img class="Logo" src="./img/Logo.png" alt="Logo" />
       <nav>
@@ -20,7 +26,7 @@
     </header>
 
     <button class="scrollTop" onclick="scrolltoTop()"></button>
-    
+
     <main>
       <section class="inicio">
         <img src="./img/inicio.jpg" alt="Fondo Facturas" />
@@ -34,12 +40,16 @@
               rico, y si no podés no te preocupes, nosotros te lo <br />
               llevamos.
             </p>
-            <div class="Comprar"><p>COMPRAR AHORA</p></div>
+            <button class="Comprar">COMPRAR AHORA</button>
           </div>
         </div>
       </section>
       <section class="productosSection" id="productos">
         <div class="titleBar">
+          <div><h2 style="color: rgba(240, 248, 255, 0);">
+            Lo más <br />
+            destacado
+          </h2></div>
           <h2>
             Lo más <br />
             destacado
@@ -54,44 +64,122 @@
           </div>
         </div>
         <div class="contenedorProducto" id="contenedorProducto"></div>
-        </section>
+      </section>
 
-        <section class="nosotro" id="nosotros">
-            <div class="titleNosotros">
-                <h2>Nosotros</h2>
-                <p>Pequeña empresa que se especializa en la producción de riquísimos <br>
-                productos para acompañarte cuando lo necesites. Fundada en 2022, poseemos <br>
-                un camino corto pero intenso, dando siempre lo mejor para que nuestros <br>
-                clientes nos sigan eligiendo como el primer dia. <br>
-                No dudes en probar nuestras delicias hechas con cariño.
-                </p>
-            </div>
+      <section class="nosotro" id="nosotros">
+        <div class="titleNosotros">
+          <h2>Nosotros</h2>
+          <p>
+            Pequeña empresa que se especializa en la producción de riquísimos
+            <br />
+            productos para acompañarte cuando lo necesites. Fundada en 2022,
+            poseemos <br />
+            un camino corto pero intenso, dando siempre lo mejor para que
+            nuestros <br />
+            clientes nos sigan eligiendo como el primer dia. <br />
+            No dudes en probar nuestras delicias hechas con cariño.
+          </p>
+        </div>
+      </section>
+      <!-- #region carousel -->
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="img/final.jpg"
+              class="d-block w-100 carousel-custom"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img/Elaboración.jpg"
+              class="d-block w-100 carousel-custom"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img/Tostadas.jpg"
+              class="d-block w-100 carousel-custom"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 
-
-        </section>
-
+      <!-- #endregion -->
     </main>
 
     <footer>
-        <section class=contact id="contacto">
-            <h2>Contacto</h2>
-            <div>
-                <h3>Dirección</h3>
-                <p>123 Anywhere St., Any City, State, Country</p>
-            </div>
-            <div>
-                <h3>Teléfono</h3>
-                <p>(123) 456-789</p>
-            </div>
-            <div>
-                <h3>Seguinos</h3>
-                <i class="bi bi-instagram"></i>
-                <i class="bi bi-facebook"></i>
-                <i class="bi bi-twitter"></i>
-            </div>
-        </section>
+      <section class="contact" id="contacto">
+        <h2>Contacto</h2>
+        <div>
+          <h3>Dirección</h3>
+          <p>123 Anywhere St., Any City, State, Country</p>
+        </div>
+        <div>
+          <h3>Teléfono</h3>
+          <p>(123) 456-789</p>
+        </div>
+        <div>
+          <h3>Seguinos</h3>
+          <i class="bi bi-instagram"></i>
+          <i class="bi bi-facebook"></i>
+          <i class="bi bi-twitter"></i>
+        </div>
+      </section>
     </footer>
 
     <script src="./script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
